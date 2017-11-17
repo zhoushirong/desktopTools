@@ -1,0 +1,20 @@
+{
+  "name": "fileManage",
+  "version": "0.0.1",
+  "description": "A file manage application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/zhoushirong/fileManage",
+  "keywords": [
+    "Electron",
+    "file",
+    "manage"
+  ],
+  "author": "zsr",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
