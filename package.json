@@ -1,20 +1,32 @@
 {
-  "name": "fileManage",
+  "name": "epoosTools",
   "version": "0.0.1",
-  "description": "A file manage application",
+  "description": "一些小工具集合，目前只支持 Mac Os 系统",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/zhoushirong/fileManage",
-  "keywords": [
-    "Electron",
-    "file",
-    "manage"
-  ],
-  "author": "zsr",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoushirong/fileManage.git"
+  },
+  "build": {
+    "appId": "xxx",
+    "mac": {
+      "category": "nodejs"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhoushirong/fileManage/issues"
+  },
+  "homepage": "https://github.com/zhoushirong/fileManage#readme",
   "devDependencies": {
-    "electron": "~1.7.8"
+    "electron": "^9.0.2",
+    "electron-builder": "^22.7.0"
   }
 }

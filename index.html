@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+	<head>
+		<meta charset="UTF-8">
+		<title>epoos tools</title>
+		<link rel="stylesheet" href="./index.css"></link>
+	</head>
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+	<body class="index-page">
+		<h1>时钟</h1>
+		<section>
+			<p>当前时间：<span class="time"></span></p>
+		</section>
+		<section>
+			<button class="recordBtn">记录时间</button>
+			<button class="clearBtn">清除记录</button>
+		</section>
+		<section class="recordField"></section>
+		<p>Nodejs版本：<span class='n_v'></span></p>
+		<p>Chormium版本：<span class="c_v"></span></p>
+		<p>Electron版本：<span class="e_v"></span></p>
+
+		<script src="./renderer.js"></script>
+	</body>
 </html>
