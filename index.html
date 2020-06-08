@@ -3,23 +3,44 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>epoos tools</title>
-		<link rel="stylesheet" href="./index.css"></link>
+		<link rel="stylesheet" href="./css/base.css"></link>
+		<link rel="stylesheet" href="./css/index.css"></link>
+		<link rel="stylesheet" href="./css/record.css"></link>
+		<link rel="stylesheet" href="./css/note.css"></link>
+		<link rel="stylesheet" href="./css/backlog.css"></link>
 	</head>
 
 	<body class="index-page">
-		<h1>时钟</h1>
-		<section>
-			<p>当前时间：<span class="time"></span></p>
+		<header class="index-page__header">
+			<section class="index-page__header-title">
+				<button class="J_link-backlog index-page__header-title-button focus">待办</button>
+				<button class="J_link-time index-page__header-title-button">计时器</button>
+				<button class="J_link-note index-page__header-title-button">js控制台</button>
+			</section>
+			<span class="J_time index-page__header-time"></span>
+		</header>
+		<section class="index-page__content">
+			<section class="J_link-backlog-content index-page__backlog">
+				<section class="J_backlog index-page__backlog-content" contenteditable="true"></section>
+				<button class="J_backlog-btn index-page__backlog-button">保存</button>
+			</section>
+			<section class="J_link-time-content index-page__record hide">
+				<button class="J_record-btn index-page__record-button">记录时间</button>
+				<button class="J_clear-btn index-page__record-button">清除记录</button>
+				<section class="J_record"></section>
+			</section>
+			<section class="J_link-note-content index-page__note hide">
+				<section class="J_note-source index-page__note-content" contenteditable="true"></section>
+				<section class="J_note-result index-page__note-content index-page__note-content-right"></section>
+				<button class="J_note-btn index-page__note-button">执行</button>
+			</section>
 		</section>
-		<section>
-			<button class="recordBtn">记录时间</button>
-			<button class="clearBtn">清除记录</button>
-		</section>
-		<section class="recordField"></section>
-		<p>Nodejs版本：<span class='n_v'></span></p>
-		<p>Chormium版本：<span class="c_v"></span></p>
-		<p>Electron版本：<span class="e_v"></span></p>
-
-		<script src="./renderer.js"></script>
+		<footer class="index-page__footer">
+			<label>Node-v: </label><span class='J_nv'></span>
+			<label>Chormium-v: </label><span class="J_cv"></span>
+			<label>Electron-v: </label><span class="J_ev"></span>
+			<label>App-v: </label><span>0.0.6</span>
+		</footer>
+		<script src="./js/renderer.js"></script>
 	</body>
 </html>

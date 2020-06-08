@@ -1,0 +1,15 @@
+.index-page__record-button:link,
+.index-page__record-button:active,
+.index-page__record-button:visited,
+.index-page__record-button:focus,
+.index-page__record-button:hover,
+.index-page__record-button {
+  font-size: 12px;
+  padding: 5px 3px;
+  background: none;
+  margin-right: 3px;
+  border: none;
+  color: #606266;
+  cursor: pointer;
+  outline: none;
+}
